@@ -24,6 +24,7 @@ export const registerUserCtrl = asyncHandler(async (req, res) => {
     fullname,
     email,
     password: hashedPassword,
+    isAdmin,
   });
   res.status(201).json({
     status: "success",
